@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity 101</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+<body>
 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">  Cybersecurity 101</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="cia.html">CIA Triad</a></li>
+          <li class="nav-item"><a class="nav-link" href="data.html">Data States</a></li>
+          <li class="nav-item"><a class="nav-link" href="authent.html">Authentication</a></li>
+          <li class="nav-item"><a class="nav-link" href="passwords.html">Passwords</a></li>
+          <li class="nav-item"><a class="nav-link" href="phishing.html">Phishing</a></li>
+          <li class="nav-item"><a class="nav-link" href="threats.html">Threats</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   <!-- Main Content -->
+   <div class="container mt-5">
+
+<!-- Authentication Section -->
+<div id="authentication" class="card mb-4">
+  <div class="card-header bg-warning text-dark">Types of Authentication</div>
+  <div class="card-body">
+    <!-- Overview -->
+    <h5>Overview</h5>
+    <p>Authentication is the process of verifying a user’s identity before granting access to systems, networks, or data. Strong authentication is essential to safeguard sensitive information and protect against unauthorized access.</p>
+    
+    <!-- Password-Based Authentication -->
+    <h5>Password-Based Authentication</h5>
+    <p>Passwords are one of the most common forms of authentication but have limitations. A strong password can offer reasonable security but is vulnerable to brute-force attacks, especially if users create weak passwords.</p>
+    <ul>
+      <li><strong>Benefits:</strong> Simple and widely used; easy to implement across different systems.</li>
+      <li><strong>Limitations:</strong> Susceptible to attacks if passwords are weak or reused across platforms.</li>
+      <li><strong>Best Practices:</strong> Encourage the use of complex passwords with a combination of letters, numbers, and symbols, and recommend password managers to store them securely.</li>
+    </ul>
+
+    <!-- Two-Factor Authentication (2FA) -->
+    <h5>Two-Factor Authentication (2FA)</h5>
+    <p>Two-factor authentication adds an additional layer of security by requiring a second form of verification, such as a one-time code sent to a mobile device, in addition to a password.</p>
+    <ul>
+      <li><strong>Increased Security:</strong> Even if a password is compromised, a second verification step makes unauthorized access more difficult.</li>
+      <li><strong>Common Methods:</strong> One-time codes sent via SMS, app-based tokens, or hardware tokens.</li>
+      <li><strong>Best Practices:</strong> Implement 2FA wherever possible, especially for sensitive accounts, and recommend app-based tokens (e.g., Google Authenticator) for greater security over SMS codes.</li>
+    </ul>
+
+    <!-- Biometric Authentication -->
+    <h5>Biometric Authentication</h5>
+    <p>Biometric authentication uses unique physical traits, such as fingerprints or facial recognition, to verify a user’s identity. Biometrics are more difficult to forge and provide an additional layer of security.</p>
+    <ul>
+      <li><strong>Secure and Convenient:</strong> Biometrics offer high security and are user-friendly, as users do not need to remember passwords.</li>
+      <li><strong>Privacy Concerns:</strong> Biometric data, if compromised, can lead to privacy issues, as physical characteristics cannot be changed like passwords.</li>
+      <li><strong>Best Practices:</strong> Use biometric authentication in conjunction with other methods, and ensure biometric data is stored securely with encryption.</li>
+    </ul>
+
+    <!-- Multi-Factor Authentication (MFA) -->
+    <h5>Multi-Factor Authentication (MFA)</h5>
+    <p>Multi-Factor Authentication (MFA) combines multiple authentication methods, such as password and biometric verification, to provide the highest level of security. By requiring multiple factors, MFA significantly reduces the risk of unauthorized access.</p>
+    <ul>
+      <li><strong>Enhanced Security:</strong> Combining multiple authentication types reduces vulnerabilities and creates multiple barriers for attackers.</li>
+      <li><strong>Implementation:</strong> Organizations can combine passwords, 2FA, and biometrics for maximum protection, especially for high-value accounts.</li>
+      <li><strong>Best Practices:</strong> Encourage employees to use MFA wherever available, and consider requiring MFA for critical systems and sensitive data access.</li>
+    </ul>
+
+    <!-- Practical Tips -->
+    <h5>Practical Tips</h5>
+    <p>For organizations and individuals, implementing strong authentication is crucial to protect sensitive information:</p>
+    <ul>
+      <li><strong>Implement 2FA:</strong> Use trusted 2FA applications like Google Authenticator, Authy, or Microsoft Authenticator for extra security.</li>
+      <li><strong>Encourage MFA for Personal Accounts:</strong> Encourage employees to secure personal and work accounts with MFA for added security.</li>
+      <li><strong>Educate Employees:</strong> Provide training on the importance of strong authentication methods, especially for remote work environments.</li>
+      <li><strong>Regularly Update Authentication Methods:</strong> Continuously evaluate and update authentication methods to stay ahead of emerging threats.</li>
+    </ul>
+  </div>
+</div>
+
+  </div>
+
+   <!-- Footer -->
+   <footer class="bg-dark text-white text-center py-3 mt-4">
+    <p>&copy; 2023 Cybersecurity 101. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+  </html>
