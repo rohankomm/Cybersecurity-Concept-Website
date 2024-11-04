@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity 101</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">  Cybersecurity 101</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="cia.html">CIA Triad</a></li>
+          <li class="nav-item"><a class="nav-link" href="data.html">Data States</a></li>
+          <li class="nav-item"><a class="nav-link" href="authent.html">Authentication</a></li>
+          <li class="nav-item"><a class="nav-link" href="passwords.html">Passwords</a></li>
+          <li class="nav-item"><a class="nav-link" href="phishing.html">Phishing</a></li>
+          <li class="nav-item"><a class="nav-link" href="threats.html">Threats</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   <!-- Main Content -->
+   <div class="container mt-5">
+
+<!-- CIA Triad Section -->
+<div id="cia-triad" class="card mb-4">
+  <div class="card-header bg-primary text-white">CIA Triad</div>
+  <div class="card-body">
+    <!-- Overview -->
+    <h5>Overview</h5>
+    <p>The CIA Triad is a foundational model in cybersecurity, focusing on three core principles: <strong>Confidentiality</strong>, <strong>Integrity</strong>, and <strong>Availability</strong>. Together, these principles ensure that data is secure, accurate, and accessible to authorized users. This model serves as the basis for effective data security practices and is critical for protecting sensitive information in both organizational and individual settings.</p>
+    
+    <!-- Confidentiality -->
+    <h5>Confidentiality</h5>
+    <p>Confidentiality ensures that sensitive information is only accessible to authorized individuals, preventing unauthorized access or exposure of private data.</p>
+    <ul>
+      <li><strong>Data Encryption:</strong> Encrypting data ensures that it cannot be read or understood by unauthorized parties. Only those with the correct decryption key can access the information.</li>
+      <li><strong>Access Controls:</strong> Setting up strict access controls, such as user permissions and role-based access, ensures only designated users can access certain data.</li>
+      <li><strong>Security Training:</strong> Educating users on safe data practices helps prevent accidental leaks or breaches, as employees become aware of potential security risks and the importance of confidentiality.</li>
+    </ul>
+
+    <!-- Integrity -->
+    <h5>Integrity</h5>
+    <p>Integrity focuses on maintaining the accuracy and consistency of data. This principle ensures that data has not been altered or tampered with, preserving its trustworthiness.</p>
+    <ul>
+      <li><strong>Hashing:</strong> Hashing algorithms create a unique hash value for a piece of data, allowing users to verify that data has not been altered. If the hash changes, it indicates the data has been modified.</li>
+      <li><strong>Checksums:</strong> Checksums are used to verify the integrity of data transferred over networks or stored in files. By comparing the checksum of original data to a received version, users can confirm its accuracy.</li>
+      <li><strong>Version Control:</strong> Version control systems keep records of changes, enabling organizations to revert to previous versions if unauthorized changes are detected.</li>
+    </ul>
+
+    <!-- Availability -->
+    <h5>Availability</h5>
+    <p>Availability ensures that data and systems are accessible to authorized users when needed. This principle prevents disruptions in access and ensures business continuity.</p>
+    <ul>
+      <li><strong>Redundancy:</strong> Redundancy involves having backup systems and resources in place so that if one system fails, another can take over, minimizing downtime.</li>
+      <li><strong>Data Backups:</strong> Regular backups ensure that data can be restored in case of accidental deletion, corruption, or cyberattacks like ransomware.</li>
+      <li><strong>System Maintenance:</strong> Regular system maintenance, including updates and patches, reduces the risk of system failures or vulnerabilities that could hinder data availability.</li>
+    </ul>
+
+    <!-- Examples -->
+    <h5>Examples of the CIA Triad in Action</h5>
+    <ul>
+      <li><strong>Secure Email Systems:</strong> A secure email system implements the CIA Triad by encrypting messages (Confidentiality), checking for integrity (Integrity), and ensuring emails are accessible to authorized users at any time (Availability).</li>
+      <li><strong>Data Recovery After a Breach:</strong> A data recovery plan aligns with the CIA Triad by restoring lost data (Availability), verifying that no data has been tampered with (Integrity), and ensuring sensitive data remains protected (Confidentiality).</li>
+    </ul>
+
+    <!-- Why It Matters -->
+    <h5>Why It Matters</h5>
+    <p>The CIA Triad is critical because it provides a comprehensive framework for securing data. Organizations rely on these principles to protect sensitive information, maintain trust with clients, and ensure operational stability. For individuals, understanding the CIA Triad helps protect personal information and reduces the risk of data breaches. By implementing the CIA Triad principles, companies and individuals can create a robust defense against cybersecurity threats, safeguarding both assets and privacy.</p>
+  </div>
+</div>
+
+  </div>
+
+   <!-- Footer -->
+   <footer class="bg-dark text-white text-center py-3 mt-4">
+    <p>&copy; 2023 Cybersecurity 101. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+  </html>
