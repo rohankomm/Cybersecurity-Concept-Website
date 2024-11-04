@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity 101</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">  Cybersecurity 101</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="cia.html">CIA Triad</a></li>
+          <li class="nav-item"><a class="nav-link" href="data.html">Data States</a></li>
+          <li class="nav-item"><a class="nav-link" href="authent.html">Authentication</a></li>
+          <li class="nav-item"><a class="nav-link" href="passwords.html">Passwords</a></li>
+          <li class="nav-item"><a class="nav-link" href="phishing.html">Phishing</a></li>
+          <li class="nav-item"><a class="nav-link" href="threats.html">Threats</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   <!-- Main Content -->
+   <div class="container mt-5">
+
+ <!-- Data States Section -->
+ <div id="data-states" class="card mb-4">
+  <div class="card-header bg-success text-white">Three States of Data</div>
+  <div class="card-body">
+    <!-- Overview -->
+    <h5>Overview</h5>
+    <p>Data can exist in three primary states: <strong>Data at Rest</strong>, <strong>Data in Transit</strong>, and <strong>Data in Use</strong>. Each state presents unique security challenges and requires specific measures to protect data from unauthorized access, tampering, or loss. Understanding these states and implementing appropriate security practices is essential for robust data protection.</p>
+    
+    <!-- Data at Rest -->
+    <h5>Data at Rest</h5>
+    <p>Data at rest includes any information that is stored on physical devices, such as hard drives, USBs, and cloud storage systems. This data is often at risk of unauthorized access or theft and requires stringent security protocols.</p>
+    <ul>
+      <li><strong>Encryption:</strong> Encrypting stored data ensures it remains unreadable to anyone who does not have the decryption key. Strong encryption standards like AES-256 provide high levels of protection.</li>
+      <li><strong>Access Controls:</strong> Implementing user permissions and authentication mechanisms ensures that only authorized individuals can access sensitive data.</li>
+      <li><strong>Physical Security:</strong> Physical security measures, such as secured server rooms and restricted access areas, add an additional layer of protection to data stored on-site.</li>
+    </ul>
+
+    <!-- Data in Transit -->
+    <h5>Data in Transit</h5>
+    <p>Data in transit is data actively moving across networks, such as data being transferred over the internet or between devices. This data is vulnerable to interception by attackers who may try to eavesdrop or alter the information.</p>
+    <ul>
+      <li><strong>SSL/TLS Encryption:</strong> Secure Socket Layer (SSL) and Transport Layer Security (TLS) protocols encrypt data transmitted over the internet, protecting it from unauthorized access.</li>
+      <li><strong>VPNs:</strong> Virtual Private Networks (VPNs) create a secure connection for remote employees, ensuring data transmitted between their device and the company network remains private.</li>
+      <li><strong>Data Integrity Checks:</strong> Integrity checks, such as hashing, ensure that data has not been altered during transmission.</li>
+    </ul>
+
+    <!-- Data in Use -->
+    <h5>Data in Use</h5>
+    <p>Data in use refers to information actively being processed by applications or systems, such as data in memory while it is being modified or viewed. Securing data in this state is essential to prevent leaks or unauthorized access during processing.</p>
+    <ul>
+      <li><strong>Secure Applications:</strong> Using secure and vetted software ensures that sensitive data is processed safely, without the risk of vulnerabilities.</li>
+      <li><strong>Regular Software Updates:</strong> Regular updates help patch security vulnerabilities, reducing the risk of exploitation by attackers.</li>
+      <li><strong>Access Management:</strong> Ensuring that only authorized users can access data in use prevents unauthorized viewing or editing during processing.</li>
+    </ul>
+
+    <!-- Practical Tips -->
+    <h5>Practical Tips</h5>
+    <p>Here are some practical tips to enhance data security in each state:</p>
+    <ul>
+      <li><strong>Encryption Protocols:</strong> Use encryption standards like AES-256 for data at rest and SSL/TLS for data in transit.</li>
+      <li><strong>Security Measures for Remote Employees:</strong> Encourage remote employees to use VPNs and secure devices, and provide cybersecurity training on handling sensitive data.</li>
+      <li><strong>Best Practices for Cloud Storage:</strong> Ensure cloud storage providers comply with security standards, enable multi-factor authentication, and regularly audit access permissions.</li>
+    </ul>
+  </div>
+</div>
+
+  </div>
+
+   <!-- Footer -->
+   <footer class="bg-dark text-white text-center py-3 mt-4">
+    <p>&copy; 2023 Cybersecurity 101. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+  </html>
